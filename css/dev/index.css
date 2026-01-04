@@ -97,7 +97,7 @@ body {
 }
 
 [class*=__container] {
-  max-width: 75rem;
+  max-width: 71.875rem;
   margin: 0 auto;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
