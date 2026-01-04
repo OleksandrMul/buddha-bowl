@@ -1,2 +1,0 @@
-# buddha-bowl
-buddha-bowl
