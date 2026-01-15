@@ -3,56 +3,244 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/GTL-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Home</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1767537594087"></script>
-		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1767537594087">
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1767537594087">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1768504028181"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1768504028181">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1768504028181">
 	</head>
 	<body>
 		<div class="wrapper">
 			<header data-fls-header="" class="header">
 				<div class="header__container">
-					<!-- <include src="@components/layout/menu/menu.html" locals='{"active":"Home"}'></include> -->
+					<div class="header__body">
+						<span class="header__logo">BUDDHa BOWL</span>
+						<div data-fls-menu="" class="header__menu menu">
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a data-fls-link="" href="menu.html" class="menu__link link link--menu">Menu</a>
+									</li>
+									<li class="menu__item">
+										<a data-fls-link="" href="about.html" class="menu__link link link--menu">About</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<a data-fls-button="" href="tel:+440723456789" class="header__button button button--head">Order Now</a>
+					</div>
 				</div>
 			</header>
 			<main class="page">
-				<section data-fls-index="" class="index">
-					<h1 class="title">Hello World</h1>
-					<picture>
-						<source media="(max-width: 479px)" srcset="./assets/img/food-bowl-479.webp" type="image/webp">
-						<source media="(max-width: 850px)" srcset="./assets/img/food-bowl-850.webp" type="image/webp">
-						<img alt="A vibrant salad bowl filled with roasted vegetables, chickpeas, and creamy ricotta cheese." src="./assets/img/food-bowl.webp">
-					</picture>
-					<picture>
-						<source media="(max-width: 479px)" srcset="./assets/img/menu/our-menu-479.webp" type="image/webp">
-						<source media="(max-width: 850px)" srcset="./assets/img/menu/our-menu-850.webp" type="image/webp">
-						<img alt="display of fresh ingredients including tomatoes, onions, and greens." src="./assets/img/menu/our-menu.webp">
-					</picture>
-					<picture>
-						<source media="(max-width: 479px)" srcset="./assets/img/about/about-us-479.webp" type="image/webp">
-						<source media="(max-width: 850px)" srcset="./assets/img/about/about-us-850.webp" type="image/webp">
-						<img alt="Close-up of the Buddha Bowl logo on a sidewalk sign." src="./assets/img/about/about-us.webp">
-					</picture>
-					<picture>
-						<source media="(max-width: 479px)" srcset="./assets/img/menu/food-items/california-love-479.webp" type="image/webp">
-						<img alt="A fresh salad bowl with a variety of vegetables and grilled chicken strips." src="./assets/img/menu/food-items/california-love.webp">
-					</picture>
-					<picture>
-						<source media="(max-width: 479px)" srcset="./assets/img/menu/food-items/hawaian-paradise-479.webp" type="image/webp">
-						<img alt="A healthy shrimp bowl with a mix of greens, corn, and pineapple." src="./assets/img/menu/food-items/hawaian-paradise.webp">
-					</picture>
-					<picture>
-						<source media="(max-width: 479px)" srcset="./assets/img/menu/food-items/pork-desire-479.webp" type="image/webp">
-						<img alt="A colorful bowl showcasing traditional Vietnamese cuisine with fresh ingredients." src="./assets/img/menu/food-items/pork-desire.webp">
-					</picture>
+				<section data-fls-index="" class="page__hero hero" aria-labelledby="hero-title">
+					<div class="hero__container">
+						<div class="hero__body">
+							<h1 id="hero-title" data-fls-title="" class="hero__title title title--main">Healthy & Authentic Vietnamese Bowls</h1>
+							<div class="hero__description">
+								<p>Fresh ingredients, delicious flavours.</p>
+							</div>
+						</div>
+					</div>
 				</section>
-				<section class="index">
-					<h2 class="title">Hello World</h2>
+				<section class="page__specialties specialties" aria-labelledby="specialties-title">
+					<div class="specialties__container">
+						<div class="specialties__media">
+							<picture>
+								<source media="(max-width: 479px)" srcset="./assets/img/food-bowl-479.webp" type="image/webp">
+								<source media="(max-width: 800px)" srcset="./assets/img/food-bowl-800.webp" type="image/webp">
+								<img class="specialties__image" alt="A vibrant salad bowl filled with roasted vegetables, chickpeas, and creamy ricotta cheese." src="./assets/img/food-bowl.webp">
+							</picture>
+						</div>
+						<div class="specialties__content">
+							<div class="specialties__body">
+								<h2 id="specialties-title" data-fls-title="" class="specialties__title title title--bg">Our specialties</h2>
+								<div class="specialties__text">
+									<p>
+										We offer a variety of healthy and flavorful Vietnamese bowls made with fresh, tasteful and high-quality ingredients.
+									</p>
+								</div>
+							</div>
+							<div data-fls-ordercards="" class="order-cards">
+								<article data-fls-ordercard="" class="order-card">
+									<a href="#" class="order-card__image-link">
+										<picture>
+											<source media="(max-width: 479px)" srcset="./assets/img/menu/food-items/pork-desire-479.webp" type="image/webp">
+											<img class="order-card__image" alt="A colorful bowl showcasing traditional Vietnamese cuisine with fresh ingredients." src="./assets/img/menu/food-items/pork-desire.webp">
+										</picture>
+									</a>
+									<div class="order-card__content">
+										<h4 class="order-card__title">
+											<a href="#" class="order-card__link-title">Pork Desire</a>
+										</h4>
+										<div class="order-card__text">
+											<p>
+												Mixed Greens, Cucumber, Pickled Veggies, Cilantro, Crispy Shallots,
+					Jalapeno.
+											</p>
+										</div>
+									</div>
+									<div class="order-card__actions">
+										<a href="#" data-fls-button="" class="order-card__button button">Order now</a>
+									</div>
+								</article>
+								<article data-fls-ordercard="" class="order-card">
+									<a href="#" class="order-card__image-link">
+										<picture>
+											<source media="(max-width: 479px)" srcset="./assets/img/menu/food-items/hawaian-paradise-479.webp" type="image/webp">
+											<img class="order-card__image" alt="A healthy shrimp bowl with a mix of greens, corn, and pineapple" src="./assets/img/menu/food-items/hawaian-paradise.webp">
+										</picture>
+									</a>
+									<div class="order-card__content">
+										<h4 class="order-card__title">
+											<a href="#" class="order-card__link-title">Hawaian Paradise</a>
+										</h4>
+										<div class="order-card__text">
+											<p>
+												Mixed Greens, Corn, Pineapple, Edamame, Purple Cabbage, FurikakeDD, Fried Garlic.
+											</p>
+										</div>
+									</div>
+									<div class="order-card__actions">
+										<a href="#" data-fls-button="" class="order-card__button button">Order now</a>
+									</div>
+								</article>
+								<article data-fls-ordercard="" class="order-card">
+									<a href="#" class="order-card__image-link">
+										<picture>
+											<source media="(max-width: 479px)" srcset="./assets/img/menu/food-items/california-love-479.webp" type="image/webp">
+											<img class="order-card__image" alt="A fresh salad bowl with a variety of vegetables and grilled chicken strips." src="./assets/img/menu/food-items/california-love.webp">
+										</picture>
+									</a>
+									<div class="order-card__content">
+										<h4 class="order-card__title">
+											<a href="#" class="order-card__link-title">California Love</a>
+										</h4>
+										<div class="order-card__text">
+											<p>Mixed Greens, Diced Tomatoes, Jicama, Corn, Cucumber, Mint, Crispy Shallots.</p>
+										</div>
+									</div>
+									<div class="order-card__actions">
+										<a href="#" data-fls-button="" class="order-card__button button">Order now</a>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section data-fls-location="" class="location" aria-labelledby="location-title">
+					<div class="location__container">
+						<h2 data-fls-title="" class="location__title title title--bg" id="location-title">Location</h2>
+						<div class="location__wrapper">
+							<div class="location__body">
+								<iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.9150595984324!2d-0.10464702300164018!3d51.51477431016414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604acd2aaaeff%3A0xbf263d0640e5e13e!2s10%20Old%20Bailey%2C%20London%20EC4M%207NG%2C%20UK!5e0!3m2!1sen!2spl!4v1767896264928!5m2!1sen!2spl" width="440" height="390" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+								<div class="location__column">
+									<h3 class="location__sub-title">Visit us</h3>
+									<div class="location__inner">
+										<ul class="location__list">
+											<li class="location__item">
+												<address>10 Old Bailey, City of London, London EC4M 7NG</address>
+											</li>
+											<li class="location__item">
+												<a href="tel:+440723456789">+44 0723456789</a>
+											</li>
+											<li class="location__item">
+												<a href="mailto:info@buddhabowl.com">info@buddhabowl.com</a>
+											</li>
+										</ul>
+										<a href="#" class="location__link">Get directions</a>
+									</div>
+								</div>
+								<div class="location__column">
+									<h3 class="location__sub-title">Opening hours</h3>
+									<div class="location__inner">
+										<ul class="location__list">
+											<li class="location__item">
+												<span>Monday</span>
+												<span>11:00 am - 2:30 pm</span>
+											</li>
+											<li class="location__item">
+												<span>Tuesday</span>
+												<span>11:00 am - 2:30 pm</span>
+											</li>
+											<li class="location__item">
+												<span>Wednesday</span>
+												<span>11:00 am - 2:30 pm</span>
+											</li>
+											<li class="location__item">
+												<span>Thursday</span>
+												<span>11:00 am - 2:30 pm</span>
+											</li>
+											<li class="location__item">
+												<span>Friday</span>
+												<span>11:00 am - 2:30 pm</span>
+											</li>
+											<li class="location__item">
+												<span>Saturday</span>
+												<span>closed</span>
+											</li>
+											<li class="location__item">
+												<span>Sunday</span>
+												<span>closed</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</section>
 			</main>
 			<footer data-fls-footer="" class="footer">
-				<div class="footer__container"></div>
+				<div class="footer__top">
+					<div class="footer__container">
+						<div class="footer__subscribe">
+							<h3 class="footer__title">Sign up for Updates &Promotions</h3>
+							<form data-fls-form="" class="form">
+								<div class="form__line">
+									<input data-fls-input="" required type="email" name="form[email]" data-fls-form-errtext="email Error" placeholder="name@email.com" class="form__input input">
+								</div>
+								<button type="submit" class="form__button button button--white">Sign up</button>
+							</form>
+						</div>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a data-fls-link="" href="menu.html" class="footer__link link link--bold">Menu</a>
+							</li>
+							<li class="footer__item">
+								<a data-fls-link="" href="about.html" class="footer__link link link--bold">About</a>
+							</li>
+							<li class="footer__item">
+								<a data-fls-link="" href="#" class="footer__link link link--bold">Join us</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__body">
+						<div class="footer__copy">@ 2026 Your Company, Inc. All rights reserved</div>
+						<ul data-fls-social="" class="social">
+							<li class="social__item">
+								<a href="https://x.com" target="_blank" class="social__link social__link--icon-x" aria-label="X (opens in new tab)" rel="noopener noreferrer"></a>
+							</li>
+							<li class="social__item">
+								<a href="https://www.instagram.com" target="_blank" class="social__link social__link--icon-inst" aria-label="Instagram (opens in new tab)" rel="noopener noreferrer"></a>
+							</li>
+							<li class="social__item">
+								<a href="https://www.pinterest.com" target="_blank" class="social__link social__link--icon-pntrst" aria-label="Pinterest (opens in new tab)" rel="noopener noreferrer"></a>
+							</li>
+							<li class="social__item">
+								<a href="https://www.linkedin.com" target="_blank" class="social__link social__link--icon-ldn" aria-label="LinkedIn (opens in new tab)" rel="noopener noreferrer"></a>
+							</li>
+							<li class="social__item">
+								<a href="https://www.tiktok.com" target="_blank" class="social__link social__link--icon-tk" aria-label="TikTok (opens in new tab)" rel="noopener noreferrer"></a>
+							</li>
+							<li class="social__item">
+								<a href="https://www.youtube.com" target="_blank" class="social__link social__link--icon-ytb" aria-label="YouTube (opens in new tab)" rel="noopener noreferrer"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</footer>
 		</div>
 	</body>
