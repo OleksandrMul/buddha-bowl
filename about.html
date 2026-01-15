@@ -5,20 +5,23 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="preload" href="./assets/fonts/GTL-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
-		<title>Home</title>
-		<link rel="modulepreload" crossorigin href="./js/common.min.js?v=1768508821735">
-		<script type="module" crossorigin="" src="./js/main.min.js?v=1768508821735"></script>
-		<script type="module" crossorigin="" src="./js/location.min.js?v=1768508821735"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1768508821735">
-		<link rel="stylesheet" crossorigin="" href="./css/location.min.css?v=1768508821735">
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1768508821735">
+		<title>About Us</title>
+		<link rel="modulepreload" crossorigin href="./js/common.min.js?v=1768508821737">
+		<script type="module" crossorigin="" src="./js/main.min.js?v=1768508821737"></script>
+		<script type="module" crossorigin="" src="./js/sectiontemplate.min.js?v=1768508821737"></script>
+		<script type="module" crossorigin="" src="./js/location.min.js?v=1768508821737"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1768508821737">
+		<link rel="stylesheet" crossorigin="" href="./css/sectiontemplate.min.css?v=1768508821737">
+		<link rel="stylesheet" crossorigin="" href="./css/location.min.css?v=1768508821737">
 	</head>
 	<body>
 		<div class="wrapper">
 			<header data-fls-header="" class="header">
 				<div class="header__container">
 					<div class="header__body">
-						<span class="header__logo">BUDDHa BOWL</span>
+						<a href="index.html" class="header__logo-link" aria-label="Go to home page">
+							<span class="header__logo">BUDDHa BOWL</span>
+						</a>
 						<div data-fls-menu="" class="header__menu menu">
 							<nav class="menu__body">
 								<ul class="menu__list">
@@ -26,7 +29,7 @@
 										<a data-fls-link="" href="menu.html" class="menu__link link link--menu">Menu</a>
 									</li>
 									<li class="menu__item">
-										<a data-fls-link="" href="about.html" class="menu__link link link--menu">About</a>
+										<a data-fls-link="" href="about.html" class="menu__link link link--menu link--active">About</a>
 									</li>
 								</ul>
 							</nav>
@@ -36,103 +39,30 @@
 				</div>
 			</header>
 			<main class="page">
-				<section data-fls-index="" class="page__hero hero" aria-labelledby="hero-title">
-					<div class="hero__container">
-						<div class="hero__body">
-							<h1 id="hero-title" data-fls-title="" class="hero__title title title--main">Healthy & Authentic Vietnamese Bowls</h1>
-							<div class="hero__description">
-								<p>Fresh ingredients, delicious flavours.</p>
+				<section data-fls-sectiontemplate="" class="page__about-us template" aria-labelledby="template-title">
+					<div class="template__container">
+						<div class="template__body">
+							<div data-fls-dynamic=".template__content, 767.98, 1" class="template__media">
+								<picture>
+									<source media="(max-width: 479px)" srcset="./assets/img/about/about-us-479.webp" type="image/webp">
+									<source media="(max-width: 800px)" srcset="./assets/img/about/about-us-800.webp" type="image/webp">
+									<img class="template__image" alt="Close-up of the Buddha Bowl logo on a sidewalk sign." src="./assets/img/about/about-us.webp">
+								</picture>
 							</div>
-						</div>
-					</div>
-				</section>
-				<section class="page__specialties specialties" aria-labelledby="specialties-title">
-					<div class="specialties__container">
-						<div class="specialties__media">
-							<picture>
-								<source media="(max-width: 479px)" srcset="./assets/img/food-bowl-479.webp" type="image/webp">
-								<source media="(max-width: 800px)" srcset="./assets/img/food-bowl-800.webp" type="image/webp">
-								<img class="specialties__image" alt="A vibrant salad bowl filled with roasted vegetables, chickpeas, and creamy ricotta cheese." src="./assets/img/food-bowl.webp">
-							</picture>
-						</div>
-						<div class="specialties__content">
-							<div class="specialties__body">
-								<h2 id="specialties-title" data-fls-title="" class="specialties__title title title--bg">Our specialties</h2>
-								<div class="specialties__text">
+							<div class="template__content">
+								<h1 id="template-title" data-fls-title="" class="template__title title title--main">About Us</h1>
+								<div class="template__text">
 									<p>
-										We offer a variety of healthy and flavorful Vietnamese bowls made with fresh, tasteful and high-quality ingredients.
+										We are a young, passionate team with a love for fresh, wholesome food and a deep respect for the environment. We bring a modern twist to traditional Vietnamese cuisine, creating nourishing bowls packed with vibrant flavors and sustainable ingredients.
 									</p>
+									<p>Come visit us!</p>
 								</div>
-							</div>
-							<div data-fls-ordercards="" class="order-cards">
-								<article data-fls-ordercard="" class="order-card">
-									<a href="#" class="order-card__image-link">
-										<picture>
-											<source media="(max-width: 479px)" srcset="./assets/img/menu/food-items/pork-desire-479.webp" type="image/webp">
-											<img class="order-card__image" alt="A colorful bowl showcasing traditional Vietnamese cuisine with fresh ingredients." src="./assets/img/menu/food-items/pork-desire.webp">
-										</picture>
-									</a>
-									<div class="order-card__content">
-										<h3 class="order-card__title">
-											<a href="#" class="order-card__link-title">Pork Desire</a>
-										</h3>
-										<div class="order-card__text">
-											<p>
-												Mixed Greens, Cucumber, Pickled Veggies, Cilantro, Crispy Shallots,
-					Jalapeno.
-											</p>
-										</div>
-									</div>
-									<div class="order-card__actions">
-										<a href="#" data-fls-button="" class="order-card__button button">Order now</a>
-									</div>
-								</article>
-								<article data-fls-ordercard="" class="order-card">
-									<a href="#" class="order-card__image-link">
-										<picture>
-											<source media="(max-width: 479px)" srcset="./assets/img/menu/food-items/hawaian-paradise-479.webp" type="image/webp">
-											<img class="order-card__image" alt="A healthy shrimp bowl with a mix of greens, corn, and pineapple" src="./assets/img/menu/food-items/hawaian-paradise.webp">
-										</picture>
-									</a>
-									<div class="order-card__content">
-										<h3 class="order-card__title">
-											<a href="#" class="order-card__link-title">Hawaian Paradise</a>
-										</h3>
-										<div class="order-card__text">
-											<p>
-												Mixed Greens, Corn, Pineapple, Edamame, Purple Cabbage, FurikakeDD, Fried Garlic.
-											</p>
-										</div>
-									</div>
-									<div class="order-card__actions">
-										<a href="#" data-fls-button="" class="order-card__button button">Order now</a>
-									</div>
-								</article>
-								<article data-fls-ordercard="" class="order-card">
-									<a href="#" class="order-card__image-link">
-										<picture>
-											<source media="(max-width: 479px)" srcset="./assets/img/menu/food-items/california-love-479.webp" type="image/webp">
-											<img class="order-card__image" alt="A fresh salad bowl with a variety of vegetables and grilled chicken strips." src="./assets/img/menu/food-items/california-love.webp">
-										</picture>
-									</a>
-									<div class="order-card__content">
-										<h3 class="order-card__title">
-											<a href="#" class="order-card__link-title">California Love</a>
-										</h3>
-										<div class="order-card__text">
-											<p>Mixed Greens, Diced Tomatoes, Jicama, Corn, Cucumber, Mint, Crispy Shallots.</p>
-										</div>
-									</div>
-									<div class="order-card__actions">
-										<a href="#" data-fls-button="" class="order-card__button button">Order now</a>
-									</div>
-								</article>
 							</div>
 						</div>
 					</div>
 				</section>
 			</main>
-			<section data-fls-location="" class="location" aria-labelledby="location-title">
+			<section data-fls-location="" class="location location--top" aria-labelledby="location-title">
 				<div class="location__container">
 					<h2 data-fls-title="" class="location__title title title--bg" id="location-title">Location</h2>
 					<div class="location__wrapper">
