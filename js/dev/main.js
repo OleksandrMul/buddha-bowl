@@ -1,4 +1,4 @@
-import { g as gotoBlock } from "./common.min.js";
+import { c as gotoBlock } from "./common.min.js";
 (function polyfill() {
   const relList = document.createElement("link").relList;
   if (relList && relList.supports && relList.supports("modulepreload")) return;
