@@ -11,7 +11,7 @@
   translate: 0 10%;
 }
 [data-fls-loaded] .hero__title {
-  animation: show-hero-title 0.6s ease forwards 0.4s;
+  animation: show-hero-title 0.6s ease forwards 0.3s;
 }
 @keyframes show-hero-title {
   0% {
@@ -38,7 +38,7 @@
   translate: 0 15%;
 }
 [data-fls-loaded] .hero__description {
-  animation: show-hero-text 0.6s ease forwards 0.5s;
+  animation: show-hero-text 0.6s ease forwards 0.4s;
 }
 @keyframes show-hero-text {
   0% {

@@ -367,7 +367,7 @@ textarea.input {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.6s 0.3s;
+  transition: all 0.6s 0.2s;
   color: #1a4d2e;
   background-color: #ffffff;
 }
@@ -489,6 +489,9 @@ textarea.input {
   }
   .button--white {
     padding-block: 0.9375rem;
+  }
+  .fls-preloader {
+    transition: all 0.6s 0.1s;
   }
   .fls-preloader__counter {
     font-size: 8rem;
