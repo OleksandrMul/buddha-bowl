@@ -1,7 +1,8 @@
 # Buddha Bowl
 
 **Role:**  
-Front-End Developer | Responsive Design | UI/UX | JavaScript Interactivity  
+Front-End Developer | Responsive Design | UI/UX | JavaScript Interactivity 
+
 [![Watch Video Presentation](assets/img/bowl-mock-up.webp)](https://youtu.be/Cjdl5y1SGhw)
 
 🌐 [View Live Project](https://oleksandrmul.github.io/buddha-bowl/)
