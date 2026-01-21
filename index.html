@@ -1,19 +1,22 @@
 <!doctype html>
 <html lang="en">
 	<head>
+		<style data-fls-preloader="false" rel="preload">
+			body > *:not(.fls-preloader) {opacity: 0;visibility: hidden;}[data-fls-preloader-loaded] body > *:not(.fls-preloader) {transition: opacity 0.5s ease 0s;opacity: 1;visibility: visible;}
+		</style>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="preload" href="./assets/fonts/GTL-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Home</title>
-		<link rel="modulepreload" crossorigin href="./js/common.min.js?v=1768651066810">
-		<script type="module" crossorigin="" src="./js/main.min.js?v=1768651066810"></script>
-		<script type="module" crossorigin="" src="./js/ordercard.min.js?v=1768651066810"></script>
-		<script type="module" crossorigin="" src="./js/location.min.js?v=1768651066810"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1768651066810">
-		<link rel="stylesheet" crossorigin="" href="./css/ordercard.min.css?v=1768651066810">
-		<link rel="stylesheet" crossorigin="" href="./css/location.min.css?v=1768651066810">
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1768651066810">
+		<link rel="modulepreload" crossorigin href="./js/common.min.js?v=1769018274061">
+		<script type="module" crossorigin="" src="./js/main.min.js?v=1769018274061"></script>
+		<script type="module" crossorigin="" src="./js/ordercard.min.js?v=1769018274061"></script>
+		<script type="module" crossorigin="" src="./js/location.min.js?v=1769018274061"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1769018274061">
+		<link rel="stylesheet" crossorigin="" href="./css/ordercard.min.css?v=1769018274061">
+		<link rel="stylesheet" crossorigin="" href="./css/location.min.css?v=1769018274061">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1769018274061">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -48,8 +51,8 @@
 						</div>
 					</div>
 				</section>
-				<section class="page__specialties specialties" aria-labelledby="specialties-title">
-					<div class="specialties__container">
+				<section data-fls-index="" class="page__specialties specialties" aria-labelledby="specialties-title">
+					<div data-fls-watcher="" data-fls-watcher-once="" class="specialties__container">
 						<div class="specialties__media">
 							<picture>
 								<source media="(max-width: 479px)" srcset="./assets/img/food-bowl-479.webp" type="image/webp">
@@ -67,75 +70,81 @@
 								</div>
 							</div>
 							<div data-fls-ordercards="" class="order-cards">
-								<article data-fls-ordercard="" class="order-card">
-									<a href="tel:+440723456789" class="order-card__image-link">
-										<picture>
-											<source media="(max-width: 479px)" srcset="./assets/img/menu/food-items/pork-desire-479.webp" type="image/webp">
-											<img class="order-card__image" alt="A colorful bowl showcasing traditional Vietnamese cuisine with fresh ingredients." src="./assets/img/menu/food-items/pork-desire.webp">
-										</picture>
-									</a>
-									<div class="order-card__content">
-										<h3 class="order-card__title">
-											<a href="tel:+440723456789" class="order-card__link-title">Pork Desire</a>
-										</h3>
-										<div class="order-card__text">
-											<p>
-												Mixed Greens, Cucumber, Pickled Veggies, Cilantro, Crispy Shallots,
-					Jalapeno.
-											</p>
+								<div class="order-cards__inner">
+									<article data-fls-ordercard="" class="order-card">
+										<a href="tel:+440723456789" class="order-card__image-link">
+											<picture>
+												<source media="(max-width: 479px)" srcset="./assets/img/menu/food-items/pork-desire-479.webp" type="image/webp">
+												<img class="order-card__image" alt="A colorful bowl showcasing traditional Vietnamese cuisine with fresh ingredients." src="./assets/img/menu/food-items/pork-desire.webp">
+											</picture>
+										</a>
+										<div class="order-card__content">
+											<h3 class="order-card__title">
+												<a href="tel:+440723456789" class="order-card__link-title">Pork Desire</a>
+											</h3>
+											<div class="order-card__text">
+												<p>
+													Mixed Greens, Cucumber, Pickled Veggies, Cilantro, Crispy Shallots,
+						Jalapeno.
+												</p>
+											</div>
 										</div>
-									</div>
-									<div class="order-card__actions">
-										<a href="tel:+440723456789" data-fls-button="" class="order-card__button button">Order now</a>
-									</div>
-								</article>
-								<article data-fls-ordercard="" class="order-card">
-									<a href="tel:+440723456789" class="order-card__image-link">
-										<picture>
-											<source media="(max-width: 479px)" srcset="./assets/img/menu/food-items/hawaian-paradise-479.webp" type="image/webp">
-											<img class="order-card__image" alt="A healthy shrimp bowl with a mix of greens, corn, and pineapple" src="./assets/img/menu/food-items/hawaian-paradise.webp">
-										</picture>
-									</a>
-									<div class="order-card__content">
-										<h3 class="order-card__title">
-											<a href="tel:+440723456789" class="order-card__link-title">Hawaian Paradise</a>
-										</h3>
-										<div class="order-card__text">
-											<p>
-												Mixed Greens, Corn, Pineapple, Edamame, Purple Cabbage, FurikakeDD, Fried Garlic.
-											</p>
+										<div class="order-card__actions">
+											<a href="tel:+440723456789" data-fls-button="" class="order-card__button button">Order now</a>
 										</div>
-									</div>
-									<div class="order-card__actions">
-										<a href="tel:+440723456789" data-fls-button="" class="order-card__button button">Order now</a>
-									</div>
-								</article>
-								<article data-fls-ordercard="" class="order-card">
-									<a href="tel:+440723456789" class="order-card__image-link">
-										<picture>
-											<source media="(max-width: 479px)" srcset="./assets/img/menu/food-items/california-love-479.webp" type="image/webp">
-											<img class="order-card__image" alt="A fresh salad bowl with a variety of vegetables and grilled chicken strips." src="./assets/img/menu/food-items/california-love.webp">
-										</picture>
-									</a>
-									<div class="order-card__content">
-										<h3 class="order-card__title">
-											<a href="tel:+440723456789" class="order-card__link-title">California Love</a>
-										</h3>
-										<div class="order-card__text">
-											<p>Mixed Greens, Diced Tomatoes, Jicama, Corn, Cucumber, Mint, Crispy Shallots.</p>
+									</article>
+								</div>
+								<div class="order-cards__inner">
+									<article data-fls-ordercard="" class="order-card">
+										<a href="tel:+440723456789" class="order-card__image-link">
+											<picture>
+												<source media="(max-width: 479px)" srcset="./assets/img/menu/food-items/hawaian-paradise-479.webp" type="image/webp">
+												<img class="order-card__image" alt="A healthy shrimp bowl with a mix of greens, corn, and pineapple" src="./assets/img/menu/food-items/hawaian-paradise.webp">
+											</picture>
+										</a>
+										<div class="order-card__content">
+											<h3 class="order-card__title">
+												<a href="tel:+440723456789" class="order-card__link-title">Hawaian Paradise</a>
+											</h3>
+											<div class="order-card__text">
+												<p>
+													Mixed Greens, Corn, Pineapple, Edamame, Purple Cabbage, FurikakeDD, Fried Garlic.
+												</p>
+											</div>
 										</div>
-									</div>
-									<div class="order-card__actions">
-										<a href="tel:+440723456789" data-fls-button="" class="order-card__button button">Order now</a>
-									</div>
-								</article>
+										<div class="order-card__actions">
+											<a href="tel:+440723456789" data-fls-button="" class="order-card__button button">Order now</a>
+										</div>
+									</article>
+								</div>
+								<div class="order-cards__inner">
+									<article data-fls-ordercard="" class="order-card">
+										<a href="tel:+440723456789" class="order-card__image-link">
+											<picture>
+												<source media="(max-width: 479px)" srcset="./assets/img/menu/food-items/california-love-479.webp" type="image/webp">
+												<img class="order-card__image" alt="A fresh salad bowl with a variety of vegetables and grilled chicken strips." src="./assets/img/menu/food-items/california-love.webp">
+											</picture>
+										</a>
+										<div class="order-card__content">
+											<h3 class="order-card__title">
+												<a href="tel:+440723456789" class="order-card__link-title">California Love</a>
+											</h3>
+											<div class="order-card__text">
+												<p>Mixed Greens, Diced Tomatoes, Jicama, Corn, Cucumber, Mint, Crispy Shallots.</p>
+											</div>
+										</div>
+										<div class="order-card__actions">
+											<a href="tel:+440723456789" data-fls-button="" class="order-card__button button">Order now</a>
+										</div>
+									</article>
+								</div>
 							</div>
 						</div>
 					</div>
 				</section>
 			</main>
 			<section data-fls-location="" class="location" aria-labelledby="location-title">
-				<div class="location__container">
+				<div data-fls-watcher="" data-fls-watcher-once="" class="location__container">
 					<h2 data-fls-title="" class="location__title title title--bg" id="location-title">Location</h2>
 					<div class="location__wrapper">
 						<div class="location__body">
@@ -196,7 +205,7 @@
 					</div>
 				</div>
 			</section>
-			<footer data-fls-footer="" class="footer">
+			<footer data-fls-watcher="" data-fls-watcher-once="" data-fls-footer="" class="footer">
 				<div class="footer__top">
 					<div class="footer__container">
 						<div class="footer__subscribe">
